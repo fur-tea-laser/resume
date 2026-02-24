@@ -3,7 +3,7 @@ import { createElement, FunctionComponent } from "preact";
 import { ResumePage } from "./ResumePage.tsx";
 
 await renderPages({
-  websiteDirectoryPath: "/home/coder/project/website",
+  websiteDirectoryPath: "/home/coder/project",
   sourceDirectoryPath: "/home/coder/project/source",
   pageDescriptions: [
     {
@@ -27,11 +27,11 @@ async function renderPages({
   sourceDirectoryPath,
   pageDescriptions,
 }: RenderPagesApi) {
-  try {
-    Deno.mkdirSync(websiteDirectoryPath);
-  } catch {
-    // noop
-  }
+  // try {
+  //   Deno.mkdirSync(websiteDirectoryPath);
+  // } catch {
+  //   // noop
+  // }
   Deno.copyFileSync(
     `${sourceDirectoryPath}/main.css`,
     `${websiteDirectoryPath}/main.css`
