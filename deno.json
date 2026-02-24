@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "preact"
+  },
+  "imports": {
+    "preact": "npm:preact@10",
+    "preact-render-to-string": "npm:preact-render-to-string@6"
+  },
+  "tasks": {
+    "buildWebsite": "deno run --allow-write --allow-read ./source/buildWebsite.tsx"
+  }
+}
