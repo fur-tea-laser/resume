@@ -21,6 +21,7 @@ function PageDocument({
         <meta charset="UTF-8" />
         <title>{pageTabTitle}</title>
         <meta name="description" content={pageDescription} />
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
         <link rel="stylesheet" href="main.css" />
       </head>
       <body>
@@ -52,7 +53,7 @@ export function ResumePage() {
         shortTermGoalText="participate on a vibrant team while working on a meaningful tangible product"
         longTermGoalText="continue to hone my expertise and skills while exchanging positive energy and ideas with all kinds of folks"
       />
-      <ResumeJobSection
+      {/* <ResumeJobSection
         companyName="stews.io"
         teamName="product"
         jobTitle="ceo/lead"
@@ -64,7 +65,7 @@ export function ResumePage() {
           "manage roadmap and issue prioritization",
         ]}
         techStack={["preact", "typescript", "scss", "git", "liqe"]}
-      />
+      /> */}
       <ResumeJobSection
         companyName="wyyerd intuition"
         teamName="engineering"
